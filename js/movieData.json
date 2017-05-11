@@ -1,0 +1,32 @@
+{
+    "movies" : [
+        {
+            "MovieID" : 1,
+            "MovieName": "Star Wars",
+            "MovieGenre": "Horror",
+            "MovieReviews": "abcd",
+            "MovieRating": 3
+        },
+        {
+            "MovieID" : 2,
+            "MovieName": "Superman",
+            "MovieGenre": "Action",
+            "MovieReviews": "ef",
+            "MovieRating": 4
+        },
+        {
+            "MovieID" : 3,
+            "MovieName": "Batman",
+            "MovieGenre": "Comedy",
+            "MovieReviews": "gh",
+            "MovieRating": 5
+        },
+        {
+            "MovieID" : 4,
+            "MovieName": "Spiderman",
+            "MovieGenre": "Sci-Fi",
+            "MovieReviews": "hi",
+            "MovieRating": 1
+        }
+    ]
+}

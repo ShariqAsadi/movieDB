@@ -1,0 +1,21 @@
+<h1 class="headerMov">Movies Database</h1><br/>
+<div class="row">
+    <div class="col-md-4" ng-repeat="mov in myMovies">
+        <grid-list movies="mov" serial-no="$index" delete-data-func="DeleteData(mov)" update-data-func="UpdateData(mov)">
+        </grid-list>    
+    </div>
+</div>
+
+<br/>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="addBt">
+            <a ui-sref="addMovie">
+            <button type="button" class="btn btn-success btn-lg">
+                <span class="addGl glyphicon glyphicon-plus"></span>Add a Movie
+            </button>
+            </a>
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="list-group">
+    <div class="list-group-item">
+        <h4 class="list-group-item-heading">Movie ID</h4>
+        <p class="list-group-item-text">{{serialNo + 1}}</p>
+    </div>
+    <div class="list-group-item">
+        <h4 class="list-group-item-heading">Movie Name</h4>
+        <p class="list-group-item-text">{{movies.MovieName}}</p>
+    </div>
+    <div class="list-group-item">
+        <h4 class="list-group-item-heading">Movie Genre</h4>
+        <p class="list-group-item-text">{{movies.MovieGenre}}</p>
+    </div>
+    <div class="list-group-item">
+        <h4 class="list-group-item-heading">Movie Reviews</h4>
+        <p class="list-group-item-text">{{movies.MovieReviews}}</p>
+    </div>
+    <div class="list-group-item">
+        <h4 class="list-group-item-heading">Movie Rating</h4>
+        <p class="list-group-item-text">{{movies.MovieRating}}</p>
+    </div>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-6">
+               <button type="button" class="btn btn-danger btn-lg" data-ng-click="deleteDataFunc(mov)">
+                    <span class="delGl glyphicon glyphicon-remove"></span> Delete
+                </button>
+                <button type="button" class="btn btn-warning btn-lg" data-ng-click="updateDataFunc(mov)">
+                    <span class="updateGl glyphicon glyphicon-pencil"></span> Update
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

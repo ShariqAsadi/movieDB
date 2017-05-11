@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="headerMov">Movies Database</h1><br/>
+        <table class="table table-hover">
+            <thead>
+                <tr align="center">
+                    <th>Movie ID</th>
+                    <th>Movie Name</th>
+                    <th>Movie Genre</th>
+                    <th colspan="4">Movie Reviews</th>
+                    <th>Movie Rating (1-5)</th>
+                    <th></th>
+                    <th></th>
+                </tr>            
+            </thead>
+            <tbody>
+                <tr ng-repeat="mov in myMovies">
+                    <td>{{$index+1}}</td>
+                    <td>{{mov.MovieName}}</td>
+                    <td>{{mov.MovieGenre}}</td>
+                    <td colspan="4">{{mov.MovieReviews}}</td>
+                    <td>{{mov.MovieRating}}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger" data-ng-click="DeleteData(mov)">
+                            <span class="delGl glyphicon glyphicon-remove"></span> Delete
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-warning" data-ng-click="UpdateData(mov)">
+                            <span class="updateGl glyphicon glyphicon-pencil"></span> Update
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="addBt">
+            <a ui-sref="addMovie">
+                <button type="button" class="btn btn-success btn-lg">
+                <span class="addGl glyphicon glyphicon-plus"></span>Add a Movie
+            </button>
+            </a>
+        </div>
+    </div>
+</div>
