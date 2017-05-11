@@ -24,18 +24,9 @@ myApp.config(function($stateProvider){
        controller: 'showMovies',
        url: 'gridView'
    }
-   
-//   var otherwise = {
-//       name: 'otherwise',
-//       url: '*path',
-//       templateUrl: 'views/getMovie.html',
-//       controller: 'showMovies'
-//   }
-    //$urlRouterProvider.otherwise('root');
+  
     $stateProvider.state(rootState);
     $stateProvider.state(addMovieState);
     $stateProvider.state(updateMovie);
     $stateProvider.state(gridView);
-//    $stateProvider.state(otherwise);
-    
 });
