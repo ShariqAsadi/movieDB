@@ -31,6 +31,7 @@ myApp.config(function($stateProvider){
 //       templateUrl: 'views/getMovie.html',
 //       controller: 'showMovies'
 //   }
+    //$urlRouterProvider.otherwise('root');
     $stateProvider.state(rootState);
     $stateProvider.state(addMovieState);
     $stateProvider.state(updateMovie);
