@@ -1,4 +1,4 @@
-myApp.config(function($stateProvider){
+myApp.config(function($stateProvider, $urlRouterProvider){
    var rootState = {
        name: 'root',
        templateUrl: 'views/getMovie.html',
@@ -22,11 +22,12 @@ myApp.config(function($stateProvider){
        name: 'gridView',
        templateUrl: 'views/gridView.html',
        controller: 'showMovies',
-       url: 'gridView'
+       url: '/gridView'
    }
-  
+    
     $stateProvider.state(rootState);
     $stateProvider.state(addMovieState);
     $stateProvider.state(updateMovie);
     $stateProvider.state(gridView);
+    $urlRouterProvider.otherwise('/');
 });
