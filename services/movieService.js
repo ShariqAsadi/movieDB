@@ -4,5 +4,5 @@ myApp.service('movieService', function(){
     this.MovieGenre = '';
     this.MovieReviews = '';
     this.MovieRating = '';
-    
+    this.currentState = '';
 });

@@ -1,4 +1,4 @@
-myApp.controller('showMovies', ['$scope', '$http', '$localStorage', '$location', '$state', '$stateParams', 'movieService', function($scope, $http, $localStorage, $location, $state, $stateParams, movieService){
+myApp.controller('showGridMovies', ['$scope', '$http', '$localStorage', '$location', '$state', '$stateParams', 'movieService', function($scope, $http, $localStorage, $location, $state, $stateParams, movieService){
     $http.get('/js/movieData.json').then(function(response){
         console.log(response);
         for(var i in response.data.movies){

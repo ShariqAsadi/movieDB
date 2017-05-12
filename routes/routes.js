@@ -21,9 +21,10 @@ myApp.config(function($stateProvider, $urlRouterProvider){
    var gridView = {
        name: 'gridView',
        templateUrl: 'views/gridView.html',
-       controller: 'showMovies',
+       controller: 'showGridMovies',
        url: '/gridView'
    }
+   
     
     $stateProvider.state(rootState);
     $stateProvider.state(addMovieState);

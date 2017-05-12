@@ -17,6 +17,11 @@ myApp.controller('updateMovie', ['$scope', '$localStorage', '$http', '$location'
             }
        }
         alert('Movie has been Update!');
-        $state.go('root');
+        if(movieService.currentState == 'gridView'){
+            $state.go('gridView');
+        }else{
+            $state.go('root');    
+        }
+        
     }
 }]);
